@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v11/font/simple-icons.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rod Stephen Abella | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0f172a;
+color:#e2e8f0;
+}
+
+/* BADGE GRID */
+
+.badge-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
+}
+
+/* BADGE CARD */
+
+.badge{
+background:#1e293b;
+padding:25px;
+border-radius:18px;
+text-align:center;
+transition:0.4s;
+position:relative;
+overflow:hidden;
+cursor:pointer;
+}
+
+/* ICON STYLE */
+
+.badge i{
+font-size:40px;
+margin-bottom:10px;
+display:block;
+transition:0.4s;
+}
+
+/* TEXT */
+
+.badge p{
+font-weight:500;
+}
+
+/* BOUNCE ANIMATION */
+
+.badge:hover i{
+animation:bounce 0.6s;
+}
+
+/* GLOW EFFECT */
+
+.badge::before{
+content:'';
+position:absolute;
+inset:0;
+border-radius:18px;
+opacity:0;
+transition:0.4s;
+}
+
+.badge:hover::before{
+opacity:1;
+}
+
+/* BOUNCE KEYFRAMES */
+
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-8px);}
+}
+
+/* BRAND COLORS + GLOW */
+
+.shopify i{color:#95bf47;}
+.shopify:hover::before{box-shadow:0 0 25px #95bf47;}
+
+.netsuite i{color:#00a1e0;}
+.netsuite:hover::before{box-shadow:0 0 25px #00a1e0;}
+
+.notion i{color:white;}
+.notion:hover::before{box-shadow:0 0 25px white;}
+
+.slack i{color:#4a154b;}
+.slack:hover::before{box-shadow:0 0 25px #4a154b;}
+
+.google i{color:#4285f4;}
+.google:hover::before{box-shadow:0 0 25px #4285f4;}
+
+.microsoft i{color:#f25022;}
+.microsoft:hover::before{box-shadow:0 0 25px #f25022;}
+
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(135deg,#1e293b,#020617);
+}
+
+.hero h1{
+font-size:2.5rem;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#94a3b8;
+margin-bottom:20px;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:5px;
+border:none;
+border-radius:30px;
+background:#6366f1;
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#818cf8;
+}
+
+/* SECTION */
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+/* CARDS */
+
+.card-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+background:#334155;
+}
+
+/* EXPERIENCE */
+
+.experience-item{
+background:#1e293b;
+padding:25px;
+margin-bottom:20px;
+border-radius:15px;
+}
+
+.experience-item h3{
+color:#818cf8;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+color:#64748b;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+.hero h1{
+font-size:1.8rem;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Rod Stephen Abella</h1>
+<p>Technical Support Specialist | E-commerce & CRM Support</p>
+
+<a href="resume.pdf" class="btn" download>Download Resume</a>
+<a href="#contact" class="btn">Contact Me</a>
+
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+<h2>About Me</h2>
+<p style="text-align:center;max-width:700px;margin:auto;">
+Dedicated and results-driven customer support professional with several years of
+experience in BPO specializing in technical support, chat and email support,
+and e-commerce assistance.
+</p>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+<h2>Core Skills</h2>
+<div class="card-container">
+
+<div class="card">Technical Troubleshooting</div>
+<div class="card">Customer Support & Experience</div>
+<div class="card">Email & Chat Support</div>
+<div class="card">E-commerce Assistance</div>
+<div class="card">Data Documentation</div>
+<div class="card">Team Collaboration</div>
+
+</div>
+</section>
+
+<!-- TOOLS -->
+<section class="section">
+<h2>Tools & Platforms</h2>
+
+<div class="badge-container">
+
+<div class="badge shopify">
+<i class="fa-brands fa-shopify"></i>
+<p>Shopify</p>
+</div>
+
+<div class="badge netsuite">
+<i class="fa-solid fa-database"></i>
+<p>NetSuite</p>
+</div>
+
+<div class="badge notion">
+<i class="si si-notion"></i>
+<p>Notion</p>
+</div>
+
+<div class="badge slack">
+<i class="fa-brands fa-slack"></i>
+<p>Slack</p>
+</div>
+
+<div class="badge google">
+<i class="fa-brands fa-google"></i>
+<p>Google Workspace</p>
+</div>
+
+<div class="badge microsoft">
+<i class="fa-brands fa-microsoft"></i>
+<p>Microsoft Office</p>
+</div>
+
+</div>
+</section>
+
+
+
+<!-- EXPERIENCE -->
+<section class="section">
+<h2>Work Experience</h2>
+
+<div class="experience-item">
+<h3>Subject Matter Expert – Foundever</h3>
+<p>2022 – 2024</p>
+<ul>
+<li>Handled escalations and complex cases</li>
+<li>Maintained quality service performance</li>
+<li>Supported team workflow</li>
+</ul>
+</div>
+
+<div class="experience-item">
+<h3>Technical Chat Support – TeleTech</h3>
+<p>2018 – 2021</p>
+<ul>
+<li>Provided troubleshooting support</li>
+<li>Handled order and payment issues</li>
+<li>Maintained customer satisfaction</li>
+</ul>
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+<h2>Education</h2>
+<p style="text-align:center;">
+BS Information Technology (Undergraduate)<br>
+University of the Visayas
+</p>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+<h2>Contact</h2>
+<p>Email: abellarodstephen@gmail.com</p>
+<p>Phone: +63 995 785 8949</p>
+<p>Messenger: m.me/1ambtwo</p>
+<p>Cebu, Philippines</p>
+</section>
+
+<footer>
+© 2026 Rod Stephen Abella
+</footer>
+
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
+
+const sections = document.querySelectorAll('.section');
+
+window.addEventListener('scroll', () => {
+const trigger = window.innerHeight * 0.85;
+
+sections.forEach(section => {
+const top = section.getBoundingClientRect().top;
+
+if(top < trigger){
+section.classList.add('show');
+}
+});
+});
+
+</script>
+
+</body>
+</html>
